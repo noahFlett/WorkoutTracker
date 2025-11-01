@@ -3,7 +3,7 @@ async function exerciseAPIcall() {
     const muscleGroup = muscleElem.value;
     const response = await fetch(`https://api.api-ninjas.com/v1/exercises?muscle=${encodeURIComponent(muscleGroup)}`, {
         method: 'GET',
-        headers: { 'X-Api-Key': 'dGPYdiaS5dfrl/I7aI03uw==sJNGx7BEjiqjv5ap' }
+        headers: { 'X-Api-Key': 'xxxxxxxxxxxxxxxxxxxxx' }
     });
     const convertToJSON = await response.json();
     getOptionsForNewExercise(convertToJSON);
