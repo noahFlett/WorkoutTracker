@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Log Reps Page</h1>
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="LogReps.html">Log Reps</a>
+        <a>Workout History</a>
+    </div>
+    <div class="main-content-div">
+        <form id="logRepsForm" class="log-reps-form">
+            <div class="form-row">
+                <label for="reps">Muscle Targeted</label>
+                <select id="muscleHit" name="muscleHit">
+                    <option value="biceps">Biceps</option>
+                    <option value="triceps">Triceps</option>
+                    <option value="forearms">Forearms</option>
+                    <option value="chest">Chest</option>
+                    <option value="shoulders">Shoulders</option>
+                    <option value="middle_back">Middle Back</option>
+                    <option value="lower_back">Lower Back</option>
+                    <option value="lats">Lats</option>       
+                    <option value="traps">Traps</option>   
+                    <option value="neck">Neck</option>    
+                    <option value="hamstrings">Hamstrings</option>
+                    <option value="quadriceps">Quadriceps</option>
+                    <option value="calves">Calves</option>
+                    <option value="glutes">Glutes</option>
+                    <option value="abdominals">Abs</option>
+                </select>
+            </div>
+            <div class="form-row" id="exerciseRow">
+                <label for="exercise">Exercise:</label>
+                <select id="exercise" name="exercise" required>
+                    <option>Select an exercise</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="sets">Sets:</label>
+                <input type="number" id="sets" name="sets" required>
+            </div>
+            <div class="form-row">
+                <label for="reps">Reps:</label>
+                <input type="number" id="reps" name="reps" required>
+            </div>
+            <div class="form-row">
+                <label for="weight">Weight (KG):</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            <input type="button" id="workoutSubmit" value="Log Workout">
+        </form>
+    </div>
+        <div class="workoutHistory" id="workoutHistory">
+        <h2>Workout History</h2>
+        <table id="historyTable">
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th>Weight (KG)</th>
+            </tr>       
+    </div>
+</body>
+</html>
